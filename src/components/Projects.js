@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaAppStore, FaGooglePlay, FaCode } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaAppStore, FaGooglePlay } from 'react-icons/fa';
+import { SiGithub } from 'react-icons/si';
 
 function Projects() {
   const { t } = useTranslation();
@@ -87,7 +88,7 @@ function Projects() {
                         className={`text-gray-600 hover:text-blue-600 ${project.isPrivate ? 'cursor-not-allowed opacity-50' : ''}`}
                         onClick={project.isPrivate ? (e) => e.preventDefault() : undefined}
                       >
-                        <FaGithub className="text-xl" />
+                        <SiGithub className="text-xl" />
                       </motion.a>
                       {project.isPrivate && tooltipVisible === index && (
                         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-lg whitespace-nowrap z-10">
@@ -108,7 +109,11 @@ function Projects() {
                       className="text-gray-600 hover:text-blue-600"
                       title="VS Code Marketplace"
                     >
-                      <FaCode className="text-xl" />
+                      <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" 
+                        alt="VS Code" 
+                        className="w-5 h-5"
+                      />
                     </motion.a>
                   )}
 
@@ -122,7 +127,11 @@ function Projects() {
                       className="text-gray-600 hover:text-blue-600"
                       title="Cursor Marketplace"
                     >
-                      <FaCode className="text-xl" />
+                      <img 
+                        src="https://cursor.sh/favicon.ico" 
+                        alt="Cursor" 
+                        className="w-5 h-5"
+                      />
                     </motion.a>
                   )}
 

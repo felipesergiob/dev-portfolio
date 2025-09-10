@@ -60,6 +60,13 @@
     "description": "Uma seleção dos meus melhores trabalhos",
     "items": [
       {
+        "title": "Portfólio Profissional",
+        "description": "Portfólio profissional desenvolvido em React com suporte a português e inglês. Interface moderna e responsiva construída com Tailwind CSS, apresentando minhas habilidades, projetos e experiência como desenvolvedor.",
+        "tags": ["React", "Tailwind CSS", "i18next", "Responsive Design", "Portfolio"],
+        "github": "https://github.com/felipesergiob/dev-portfolio",
+        "isPrivate": false
+      },
+      {
         "title": "Handlebars Viewer",
         "description": "Extensão para VS Code e Cursor que analisa automaticamente a estrutura de templates Handlebars e gera dados de exemplo. Oferece preview ao vivo com auto-refresh e exportação PDF com um clique.",
         "tags": ["VS Code Extension", "Handlebars", "JavaScript", "Template Engine"],
