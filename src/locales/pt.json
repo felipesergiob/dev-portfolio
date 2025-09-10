@@ -9,6 +9,7 @@
   "nav": {
     "home": "Início",
     "about": "Sobre",
+    "experience": "Experiência",
     "projects": "Projetos",
     "skills": "Habilidades",
     "contact": "Contato"
@@ -21,7 +22,7 @@
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Desenvolvedor Mobile e Web apaixonado por criar soluções inovadoras. Com experiência em desenvolvimento fullstack, combino criatividade e técnica para entregar produtos de alta qualidade. Especializado em React, Flutter e desenvolvimento ágil.",
+    "description": "Desenvolvedor Fullstack apaixonado por criar soluções inovadoras. Com experiência em desenvolvimento web e mobile, combino criatividade e técnica para entregar produtos de alta qualidade. Especializado em React, Angular, Flutter, Node.js e desenvolvimento ágil.",
     "experience": {
       "title": "Experiência",
       "years": "2+",
@@ -33,27 +34,48 @@
       "description": "Projetos completos"
     }
   },
+  "experience": {
+    "title": "Experiência Profissional",
+    "jobs": [
+      {
+        "title": "Junior Fullstack Software Engineer",
+        "company": "Amigo Tech",
+        "period": "Out 2024 - Presente",
+        "location": "Híbrido",
+        "description": "Trabalho em múltiplos módulos para melhorar fluxos médicos, incluindo agendamento, CRM, assinaturas digitais e campanhas de marketing. Desenvolvo recursos em tempo real usando WebSockets e integro com APIs externas como Meta. Implemento lógica de backend e automatizo tarefas recorrentes com CRON jobs para melhorar a eficiência operacional.",
+        "technologies": ["Angular", "React", "Node.js", "WebSockets", "CI/CD", "n8n", "AI"]
+      },
+      {
+        "title": "Mobile Developer Intern",
+        "company": "Assobio App",
+        "period": "Out 2022 - Set 2024",
+        "location": "Híbrido",
+        "description": "Desenvolvi aplicativo mobile Flutter focado no bem-estar de pets e geolocalização, integrando recursos de IA para melhorar a experiência do usuário. Construí serviços backend usando Quarkus e implementei pipelines CI/CD com Codemagic para deployments nas App Store e Google Play Store.",
+        "technologies": ["Flutter", "Quarkus", "AWS", "RabbitMQ", "Codemagic", "AI/ML"]
+      }
+    ]
+  },
   "projects": {
     "title": "Projetos em Destaque",
     "description": "Uma seleção dos meus melhores trabalhos",
     "items": [
       {
+        "title": "Handlebars Viewer",
+        "description": "Extensão para VS Code e Cursor que analisa automaticamente a estrutura de templates Handlebars e gera dados de exemplo. Oferece preview ao vivo com auto-refresh e exportação PDF com um clique.",
+        "tags": ["VS Code Extension", "Handlebars", "JavaScript", "Template Engine"],
+        "github": "https://github.com/felipesergiob/handlebars-viewer",
+        "vscode": "https://marketplace.visualstudio.com/items?itemName=FelipeSergio.handlebars-viewer",
+        "cursor": "https://open-vsx.org/extension/felipesergio/handlebars-viewer",
+        "isPrivate": false
+      },
+      {
         "title": "Assobio App",
-        "description": "Aplicativo mobile para monitoramento ambiental usando Flutter e IA",
-        "tags": ["Flutter", "Python", "IA", "Quarkus"],
-        "link": "https://github.com/felipesergiob"
-      },
-      {
-        "title": "Dashboard Analytics",
-        "description": "Sistema web de análise de dados com visualizações interativas",
-        "tags": ["React", "Node.js", "D3.js", "MongoDB"],
-        "link": "https://github.com/felipesergiob"
-      },
-      {
-        "title": "E-commerce Platform",
-        "description": "Plataforma completa de e-commerce com gestão de produtos",
-        "tags": ["AngularJS", "Node.js", "PostgreSQL", "AWS"],
-        "link": "https://github.com/felipesergiob"
+        "description": "Aplicativo mobile cross-platform desenvolvido em Flutter com recursos de geolocalização e bem-estar de pets. Integra módulos baseados em IA para recomendações de usuários, previsão comportamental de pets e notificações automatizadas.",
+        "tags": ["Flutter", "AI/ML", "Geolocation", "AWS", "RabbitMQ"],
+        "appstore": "https://apps.apple.com/br/app/assobio-app/id6458534384",
+        "playstore": "https://play.google.com/store/apps/details?id=br.com.assobio.dogapp",
+        "isPrivate": true,
+        "privateTooltip": "Repositório privado da empresa Assobio App"
       }
     ]
   },
@@ -61,21 +83,33 @@
     "title": "Habilidades",
     "description": "Tecnologias que uso no dia a dia",
     "categories": {
-      "frontend": {
-        "title": "Frontend",
-        "items": ["React", "AngularJS", "Flutter", "HTML5", "CSS3", "JavaScript"]
+      "languages": {
+        "title": "Linguagens & Frameworks",
+        "items": ["JavaScript (Node.js, React, Angular)", "Dart (Flutter)", "Java (Quarkus, Spring Boot)"]
       },
       "backend": {
-        "title": "Backend",
-        "items": ["Node.js", "Python", "Java", "Quarkus", "REST APIs"]
+        "title": "Backend Development",
+        "items": ["RESTful APIs", "Microservices", "CRON Jobs", "SQL (PostgreSQL, MySQL)", "Server-side Logic"]
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "items": ["Responsive UI Design", "State Management (Redux, Context API)", "Cross-platform Mobile Apps (Flutter)"]
+      },
+      "devops": {
+        "title": "DevOps & Deployment",
+        "items": ["Git", "CI/CD Pipelines (Codemagic, Jenkins)", "Docker", "Kubernetes", "AWS Cloud Services"]
       },
       "database": {
         "title": "Banco de Dados",
-        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
+        "items": ["PostgreSQL", "MySQL", "MongoDB"]
       },
-      "tools": {
-        "title": "Ferramentas",
-        "items": ["Git", "Docker", "AWS", "CI/CD", "Figma"]
+      "realtime": {
+        "title": "Real-Time & Automation",
+        "items": ["WebSockets", "Socket.IO", "Workflow Automation (n8n)", "Task Scheduling"]
+      },
+      "ai": {
+        "title": "AI & Machine Learning",
+        "items": ["AI Pipeline Design", "ML Models Integration", "RabbitMQ", "APIs (Meta, Z-API)"]
       }
     }
   },

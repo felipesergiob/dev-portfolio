@@ -25,7 +25,7 @@ function Navbar() {
     i18n.changeLanguage(newLang);
   };
 
-  const navItems = ['home', 'about', 'projects', 'skills', 'contact'];
+  const navItems = ['home', 'about', 'experience', 'projects', 'skills', 'contact'];
 
   return (
     <motion.nav

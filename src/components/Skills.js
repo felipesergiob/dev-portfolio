@@ -3,17 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import {
   FaReact,
-  FaAngular,
-  FaNodeJs,
-  FaPython,
   FaJava,
-  FaDatabase,
   FaDocker,
   FaAws,
   FaGitAlt,
-  FaFigma
+  FaFigma,
+  FaServer,
+  FaCogs,
+  FaRobot
 } from 'react-icons/fa';
-import { SiFlutter, SiFirebase } from 'react-icons/si';
+import { SiFlutter, SiPostgresql, SiMysql, SiMongodb, SiKubernetes, SiSocketdotio, SiRabbitmq } from 'react-icons/si';
 
 function Skills() {
   const { t } = useTranslation();
@@ -40,18 +39,46 @@ function Skills() {
   };
 
   const iconComponents = {
-    React: FaReact,
-    AngularJS: FaAngular,
-    Flutter: SiFlutter,
-    'Node.js': FaNodeJs,
-    Python: FaPython,
-    Java: FaJava,
-    MongoDB: FaDatabase,
-    Firebase: SiFirebase,
-    Docker: FaDocker,
-    AWS: FaAws,
-    Git: FaGitAlt,
-    Figma: FaFigma
+    // Languages & Frameworks
+    'JavaScript (Node.js, React, Angular)': FaReact,
+    'Dart (Flutter)': SiFlutter,
+    'Java (Quarkus, Spring Boot)': FaJava,
+    
+    // Backend Development
+    'RESTful APIs': FaServer,
+    'Microservices': FaCogs,
+    'CRON Jobs': FaCogs,
+    'SQL (PostgreSQL, MySQL)': SiPostgresql,
+    'Server-side Logic': FaServer,
+    
+    // Frontend Development
+    'Responsive UI Design': FaFigma,
+    'State Management (Redux, Context API)': FaReact,
+    'Cross-platform Mobile Apps (Flutter)': SiFlutter,
+    
+    // DevOps & Deployment
+    'Git': FaGitAlt,
+    'CI/CD Pipelines (Codemagic, Jenkins)': FaCogs,
+    'Docker': FaDocker,
+    'Kubernetes': SiKubernetes,
+    'AWS Cloud Services': FaAws,
+    
+    // Database
+    'PostgreSQL': SiPostgresql,
+    'MySQL': SiMysql,
+    'MongoDB': SiMongodb,
+    
+    // Real-Time & Automation
+    'WebSockets': SiSocketdotio,
+    'Socket.IO': SiSocketdotio,
+    'Workflow Automation (n8n)': FaCogs,
+    'Task Scheduling': FaCogs,
+    
+    // AI & Machine Learning
+    'AI Pipeline Design': FaRobot,
+    'ML Models Integration': FaRobot,
+    'RabbitMQ': SiRabbitmq,
+    'APIs (Meta, Z-API)': FaServer
   };
 
   return (
@@ -72,7 +99,7 @@ function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {Object.entries(t('skills.categories', { returnObjects: true })).map(([key, category]) => (
             <motion.div
               key={key}

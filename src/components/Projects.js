@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaAppStore, FaGooglePlay, FaCode } from 'react-icons/fa';
 
 function Projects() {
   const { t } = useTranslation();
+  const [tooltipVisible, setTooltipVisible] = useState(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -71,24 +72,100 @@ function Projects() {
                   ))}
                 </div>
                 <div className="flex justify-end space-x-4">
-                  <motion.a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1 }}
-                    className="text-gray-600 hover:text-blue-600"
-                  >
-                    <FaGithub className="text-xl" />
-                  </motion.a>
-                  <motion.a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1 }}
-                    className="text-gray-600 hover:text-blue-600"
-                  >
-                    <FaExternalLinkAlt className="text-xl" />
-                  </motion.a>
+                  {/* GitHub Link */}
+                  {project.github && (
+                    <motion.div
+                      className="relative"
+                      onMouseEnter={() => setTooltipVisible(index)}
+                      onMouseLeave={() => setTooltipVisible(null)}
+                    >
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        className={`text-gray-600 hover:text-blue-600 ${project.isPrivate ? 'cursor-not-allowed opacity-50' : ''}`}
+                        onClick={project.isPrivate ? (e) => e.preventDefault() : undefined}
+                      >
+                        <FaGithub className="text-xl" />
+                      </motion.a>
+                      {project.isPrivate && tooltipVisible === index && (
+                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-lg whitespace-nowrap z-10">
+                          {project.privateTooltip}
+                          <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800"></div>
+                        </div>
+                      )}
+                    </motion.div>
+                  )}
+
+                  {/* VS Code Marketplace */}
+                  {project.vscode && (
+                    <motion.a
+                      href={project.vscode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="text-gray-600 hover:text-blue-600"
+                      title="VS Code Marketplace"
+                    >
+                      <FaCode className="text-xl" />
+                    </motion.a>
+                  )}
+
+                  {/* Cursor Marketplace */}
+                  {project.cursor && (
+                    <motion.a
+                      href={project.cursor}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="text-gray-600 hover:text-blue-600"
+                      title="Cursor Marketplace"
+                    >
+                      <FaCode className="text-xl" />
+                    </motion.a>
+                  )}
+
+                  {/* App Store */}
+                  {project.appstore && (
+                    <motion.a
+                      href={project.appstore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="text-gray-600 hover:text-blue-600"
+                      title="App Store"
+                    >
+                      <FaAppStore className="text-xl" />
+                    </motion.a>
+                  )}
+
+                  {/* Google Play Store */}
+                  {project.playstore && (
+                    <motion.a
+                      href={project.playstore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="text-gray-600 hover:text-blue-600"
+                      title="Google Play Store"
+                    >
+                      <FaGooglePlay className="text-xl" />
+                    </motion.a>
+                  )}
+
+                  {/* Fallback external link */}
+                  {!project.github && !project.vscode && !project.cursor && !project.appstore && !project.playstore && project.link && (
+                    <motion.a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="text-gray-600 hover:text-blue-600"
+                    >
+                      <FaExternalLinkAlt className="text-xl" />
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>

@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact"
@@ -21,7 +22,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "Mobile and Web Developer passionate about creating innovative solutions. With fullstack development experience, I combine creativity and technique to deliver high-quality products. Specialized in React, Flutter, and agile development.",
+    "description": "Fullstack Developer passionate about creating innovative solutions. With experience in web and mobile development, I combine creativity and technique to deliver high-quality products. Specialized in React, Angular, Flutter, Node.js and agile development.",
     "experience": {
       "title": "Experience",
       "years": "2+",
@@ -33,27 +34,48 @@
       "description": "Completed projects"
     }
   },
+  "experience": {
+    "title": "Professional Experience",
+    "jobs": [
+      {
+        "title": "Junior Fullstack Software Engineer",
+        "company": "Amigo Tech",
+        "period": "Oct 2024 - Present",
+        "location": "Hybrid",
+        "description": "Work on multiple modules to improve medical workflows, including scheduling, CRM, digital signatures, and marketing campaigns. Develop real-time features using WebSockets and integrate with external APIs such as Meta. Implement backend logic and automate recurring tasks with CRON jobs to enhance operational efficiency.",
+        "technologies": ["Angular", "React", "Node.js", "WebSockets", "CI/CD", "n8n", "AI"]
+      },
+      {
+        "title": "Mobile Developer Intern",
+        "company": "Assobio App",
+        "period": "Oct 2022 - Sep 2024",
+        "location": "Hybrid",
+        "description": "Developed a Flutter mobile application focused on pet well-being and geolocation, integrating AI-powered features to enhance user experience. Built backend services using Quarkus and implemented CI/CD pipelines with Codemagic for seamless deployments to both the Apple App Store and Google Play Store.",
+        "technologies": ["Flutter", "Quarkus", "AWS", "RabbitMQ", "Codemagic", "AI/ML"]
+      }
+    ]
+  },
   "projects": {
     "title": "Featured Projects",
     "description": "A selection of my best work",
     "items": [
       {
+        "title": "Handlebars Viewer",
+        "description": "VS Code and Cursor extension that automatically analyzes Handlebars template structure and generates sample data. Offers live preview with auto-refresh and one-click PDF export.",
+        "tags": ["VS Code Extension", "Handlebars", "JavaScript", "Template Engine"],
+        "github": "https://github.com/felipesergiob/handlebars-viewer",
+        "vscode": "https://marketplace.visualstudio.com/items?itemName=FelipeSergio.handlebars-viewer",
+        "cursor": "https://open-vsx.org/extension/felipesergio/handlebars-viewer",
+        "isPrivate": false
+      },
+      {
         "title": "Assobio App",
-        "description": "Mobile app for environmental monitoring using Flutter and AI",
-        "tags": ["Flutter", "Python", "AI", "Quarkus"],
-        "link": "https://github.com/felipesergiob"
-      },
-      {
-        "title": "Dashboard Analytics",
-        "description": "Web analytics system with interactive visualizations",
-        "tags": ["React", "Node.js", "D3.js", "MongoDB"],
-        "link": "https://github.com/felipesergiob"
-      },
-      {
-        "title": "E-commerce Platform",
-        "description": "Complete e-commerce platform with product management",
-        "tags": ["AngularJS", "Node.js", "PostgreSQL", "AWS"],
-        "link": "https://github.com/felipesergiob"
+        "description": "Cross-platform mobile app developed in Flutter with geolocation and pet well-being features. Integrates AI-based modules for user recommendations, behavioral prediction for pets, and automated notifications.",
+        "tags": ["Flutter", "AI/ML", "Geolocation", "AWS", "RabbitMQ"],
+        "appstore": "https://apps.apple.com/br/app/assobio-app/id6458534384",
+        "playstore": "https://play.google.com/store/apps/details?id=br.com.assobio.dogapp",
+        "isPrivate": true,
+        "privateTooltip": "Private repository from Assobio App company"
       }
     ]
   },
@@ -61,21 +83,33 @@
     "title": "Skills",
     "description": "Technologies I use daily",
     "categories": {
-      "frontend": {
-        "title": "Frontend",
-        "items": ["React", "AngularJS", "Flutter", "HTML5", "CSS3", "JavaScript"]
+      "languages": {
+        "title": "Languages & Frameworks",
+        "items": ["JavaScript (Node.js, React, Angular)", "Dart (Flutter)", "Java (Quarkus, Spring Boot)"]
       },
       "backend": {
-        "title": "Backend",
-        "items": ["Node.js", "Python", "Java", "Quarkus", "REST APIs"]
+        "title": "Backend Development",
+        "items": ["RESTful APIs", "Microservices", "CRON Jobs", "SQL (PostgreSQL, MySQL)", "Server-side Logic"]
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "items": ["Responsive UI Design", "State Management (Redux, Context API)", "Cross-platform Mobile Apps (Flutter)"]
+      },
+      "devops": {
+        "title": "DevOps & Deployment",
+        "items": ["Git", "CI/CD Pipelines (Codemagic, Jenkins)", "Docker", "Kubernetes", "AWS Cloud Services"]
       },
       "database": {
         "title": "Database",
-        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
+        "items": ["PostgreSQL", "MySQL", "MongoDB"]
       },
-      "tools": {
-        "title": "Tools",
-        "items": ["Git", "Docker", "AWS", "CI/CD", "Figma"]
+      "realtime": {
+        "title": "Real-Time & Automation",
+        "items": ["WebSockets", "Socket.IO", "Workflow Automation (n8n)", "Task Scheduling"]
+      },
+      "ai": {
+        "title": "AI & Machine Learning",
+        "items": ["AI Pipeline Design", "ML Models Integration", "RabbitMQ", "APIs (Meta, Z-API)"]
       }
     }
   },
