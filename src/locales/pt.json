@@ -115,7 +115,15 @@
       "name": "Nome",
       "email": "E-mail",
       "message": "Mensagem",
-      "send": "Enviar Mensagem"
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "invalidEmail": "Por favor, insira um email válido",
+      "required": "Campo obrigatório"
+    },
+    "messages": {
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente.",
+      "configError": "Configuração de email não encontrada. Verifique as variáveis de ambiente."
     },
     "info": {
       "location": "Recife, PE",

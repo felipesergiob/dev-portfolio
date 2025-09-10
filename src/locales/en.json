@@ -115,7 +115,15 @@
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "sending": "Sending...",
+      "invalidEmail": "Please enter a valid email",
+      "required": "Required field"
+    },
+    "messages": {
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "configError": "Email configuration not found. Check environment variables."
     },
     "info": {
       "location": "Recife, PE",

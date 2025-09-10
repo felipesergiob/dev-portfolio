@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaSpinner, FaCheck, FaExclamationTriangle } from 'react-icons/fa';
+import emailService from '../services/emailService';
 
 function Contact() {
   const { t } = useTranslation();
@@ -10,6 +11,9 @@ function Contact() {
     email: '',
     message: ''
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const isEmailValid = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,10 +45,33 @@ function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar o formulário
-    console.log('Form submitted:', formData);
+    
+    if (!isFormValid) return;
+    
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    
+    try {
+      const result = await emailService.sendContactEmail(formData);
+
+      if (result.success) {
+        setSubmitStatus('success');
+
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -110,7 +137,7 @@ function Contact() {
                 />
                 {formData.email && !isEmailValid(formData.email) && (
                   <p className="mt-1 text-sm text-red-500">
-                    {t('contact.form.invalidEmail', 'Por favor, insira um email válido')}
+                    {t('contact.form.invalidEmail')}
                   </p>
                 )}
               </div>
@@ -129,18 +156,49 @@ function Contact() {
                   required
                 ></textarea>
               </div>
+              {/* Mensagem de feedback */}
+              {submitStatus && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`p-4 rounded-lg flex items-center space-x-2 ${
+                    submitStatus === 'success'
+                      ? 'bg-green-100 text-green-800 border border-green-200'
+                      : 'bg-red-100 text-red-800 border border-red-200'
+                  }`}
+                >
+                  {submitStatus === 'success' ? (
+                    <FaCheck className="text-green-600" />
+                  ) : (
+                    <FaExclamationTriangle className="text-red-600" />
+                  )}
+                  <span>
+                    {submitStatus === 'success'
+                      ? t('contact.messages.success')
+                      : t('contact.messages.error')}
+                  </span>
+                </motion.div>
+              )}
+
               <motion.button
-                whileHover={{ scale: isFormValid ? 1.05 : 1 }}
-                whileTap={{ scale: isFormValid ? 0.95 : 1 }}
+                whileHover={{ scale: isFormValid && !isSubmitting ? 1.05 : 1 }}
+                whileTap={{ scale: isFormValid && !isSubmitting ? 0.95 : 1 }}
                 type="submit"
-                disabled={!isFormValid}
-                className={`w-full py-3 rounded-lg font-medium transition-colors ${
-                  isFormValid 
+                disabled={!isFormValid || isSubmitting}
+                className={`w-full py-3 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 ${
+                  isFormValid && !isSubmitting
                     ? 'bg-blue-600 text-white hover:bg-blue-700' 
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
               >
-                {t('contact.form.send')}
+                {isSubmitting ? (
+                  <>
+                    <FaSpinner className="animate-spin" />
+                    <span>{t('contact.form.sending')}</span>
+                  </>
+                ) : (
+                  <span>{t('contact.form.send')}</span>
+                )}
               </motion.button>
             </form>
           </motion.div>
