@@ -7,12 +7,11 @@ import {
   FaDocker,
   FaAws,
   FaGitAlt,
-  FaFigma,
   FaServer,
   FaCogs,
   FaRobot
 } from 'react-icons/fa';
-import { SiFlutter, SiPostgresql, SiMysql, SiMongodb, SiKubernetes, SiSocketdotio, SiRabbitmq } from 'react-icons/si';
+import { SiFlutter, SiPostgresql, SiMysql, SiMongodb, SiSocketdotio, SiRabbitmq } from 'react-icons/si';
 
 function Skills() {
   const { t } = useTranslation();
@@ -39,46 +38,29 @@ function Skills() {
   };
 
   const iconComponents = {
-    // Languages & Frameworks
+    // Development
     'JavaScript (Node.js, React, Angular)': FaReact,
     'Dart (Flutter)': SiFlutter,
     'Java (Quarkus, Spring Boot)': FaJava,
-    
-    // Backend Development
     'RESTful APIs': FaServer,
-    'Microservices': FaCogs,
-    'CRON Jobs': FaCogs,
-    'SQL (PostgreSQL, MySQL)': SiPostgresql,
-    'Server-side Logic': FaServer,
     
-    // Frontend Development
-    'Responsive UI Design': FaFigma,
-    'State Management (Redux, Context API)': FaReact,
-    'Cross-platform Mobile Apps (Flutter)': SiFlutter,
-    
-    // DevOps & Deployment
+    // DevOps & Infrastructure
     'Git': FaGitAlt,
     'CI/CD Pipelines (Codemagic, Jenkins)': FaCogs,
     'Docker': FaDocker,
-    'Kubernetes': SiKubernetes,
     'AWS Cloud Services': FaAws,
     
-    // Database
+    // Database & APIs
     'PostgreSQL': SiPostgresql,
     'MySQL': SiMysql,
     'MongoDB': SiMongodb,
-    
-    // Real-Time & Automation
     'WebSockets': SiSocketdotio,
-    'Socket.IO': SiSocketdotio,
-    'Workflow Automation (n8n)': FaCogs,
-    'Task Scheduling': FaCogs,
     
-    // AI & Machine Learning
+    // Automation & AI
+    'Workflow Automation (n8n)': FaCogs,
     'AI Pipeline Design': FaRobot,
     'ML Models Integration': FaRobot,
-    'RabbitMQ': SiRabbitmq,
-    'APIs (Meta, Z-API)': FaServer
+    'RabbitMQ': SiRabbitmq
   };
 
   return (

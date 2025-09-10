@@ -90,33 +90,21 @@
     "title": "Habilidades",
     "description": "Tecnologias que uso no dia a dia",
     "categories": {
-      "languages": {
-        "title": "Linguagens & Frameworks",
-        "items": ["JavaScript (Node.js, React, Angular)", "Dart (Flutter)", "Java (Quarkus, Spring Boot)"]
-      },
-      "backend": {
-        "title": "Backend Development",
-        "items": ["RESTful APIs", "Microservices", "CRON Jobs", "SQL (PostgreSQL, MySQL)", "Server-side Logic"]
-      },
-      "frontend": {
-        "title": "Frontend Development",
-        "items": ["Responsive UI Design", "State Management (Redux, Context API)", "Cross-platform Mobile Apps (Flutter)"]
+      "development": {
+        "title": "Desenvolvimento",
+        "items": ["JavaScript (Node.js, React, Angular)", "Dart (Flutter)", "Java (Quarkus, Spring Boot)", "RESTful APIs"]
       },
       "devops": {
-        "title": "DevOps & Deployment",
-        "items": ["Git", "CI/CD Pipelines (Codemagic, Jenkins)", "Docker", "Kubernetes", "AWS Cloud Services"]
+        "title": "DevOps & Infraestrutura",
+        "items": ["Git", "CI/CD Pipelines (Codemagic, Jenkins)", "Docker", "AWS Cloud Services"]
       },
       "database": {
-        "title": "Banco de Dados",
-        "items": ["PostgreSQL", "MySQL", "MongoDB"]
+        "title": "Banco de Dados & APIs",
+        "items": ["PostgreSQL", "MySQL", "MongoDB", "WebSockets"]
       },
-      "realtime": {
-        "title": "Real-Time & Automation",
-        "items": ["WebSockets", "Socket.IO", "Workflow Automation (n8n)", "Task Scheduling"]
-      },
-      "ai": {
-        "title": "AI & Machine Learning",
-        "items": ["AI Pipeline Design", "ML Models Integration", "RabbitMQ", "APIs (Meta, Z-API)"]
+      "automation": {
+        "title": "Automação & IA",
+        "items": ["Workflow Automation (n8n)", "AI Pipeline Design", "ML Models Integration", "RabbitMQ"]
       }
     }
   },
