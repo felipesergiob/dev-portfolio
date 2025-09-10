@@ -1,4 +1,4 @@
-# Portfolio - Felipe Sérgio Barroso
+# Portfolio - Felipe Sérgio
 
 This is a professional portfolio developed in React, with support for Portuguese and English.
 

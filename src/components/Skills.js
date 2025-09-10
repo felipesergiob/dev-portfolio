@@ -9,7 +9,8 @@ import {
   FaGitAlt,
   FaServer,
   FaCogs,
-  FaRobot
+  FaRobot,
+  FaBrain
 } from 'react-icons/fa';
 import { SiFlutter, SiPostgresql, SiMysql, SiMongodb, SiSocketdotio, SiRabbitmq } from 'react-icons/si';
 
@@ -59,7 +60,7 @@ function Skills() {
     // Automation & AI
     'Workflow Automation (n8n)': FaCogs,
     'AI Pipeline Design': FaRobot,
-    'ML Models Integration': FaRobot,
+    'ML Models Integration': FaBrain,
     'RabbitMQ': SiRabbitmq
   };
 
