@@ -1,39 +1,39 @@
-# Portfólio - Felipe Sérgio Barroso
+# Portfolio - Felipe Sérgio Barroso
 
-Este é um portfólio profissional desenvolvido em React, com suporte para português e inglês.
+This is a professional portfolio developed in React, with support for Portuguese and English.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - React
-- i18next (Internacionalização)
+- i18next (Internationalization)
 - Tailwind CSS
 - Heroicons
 
-## Como Executar
+## How to Run
 
-1. Clone o repositório
-2. Instale as dependências:
+1. Clone the repository
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Execute o projeto em modo de desenvolvimento:
+3. Run the project in development mode:
 ```bash
 npm start
 ```
 
-4. Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Recursos
+## Features
 
-- Interface moderna e responsiva
-- Suporte para português e inglês
-- Design limpo e profissional
-- Fácil manutenção e atualização
+- Modern and responsive interface
+- Support for Portuguese and English
+- Clean and professional design
+- Easy maintenance and updates
 
-## Estrutura do Projeto
+## Project Structure
 
-- `/src/components` - Componentes React
-- `/src/locales` - Arquivos de tradução
-- `/src/App.js` - Componente principal
-- `/src/index.js` - Ponto de entrada da aplicação 
+- `/src/components` - React components
+- `/src/locales` - Translation files
+- `/src/App.js` - Main component
+- `/src/index.js` - Application entry point 
