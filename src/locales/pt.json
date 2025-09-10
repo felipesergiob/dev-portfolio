@@ -1,0 +1,97 @@
+{
+  "header": {
+    "name": "Felipe Sérgio Barroso",
+    "title": "Desenvolvedor Web e Mobile",
+    "contact": "(81) 98202-2426",
+    "email": "felipessmbf@gmail.com",
+    "location": "RECIFE - PE"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Felipe Sérgio Barroso",
+    "title": "Desenvolvedor Web e Mobile",
+    "cta": "Conheça meu trabalho"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "description": "Desenvolvedor Mobile e Web apaixonado por criar soluções inovadoras. Com experiência em desenvolvimento fullstack, combino criatividade e técnica para entregar produtos de alta qualidade. Especializado em React, Flutter e desenvolvimento ágil.",
+    "experience": {
+      "title": "Experiência",
+      "years": "2+",
+      "description": "Anos de experiência"
+    },
+    "projects": {
+      "title": "Projetos",
+      "count": "10+",
+      "description": "Projetos completos"
+    }
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "description": "Uma seleção dos meus melhores trabalhos",
+    "items": [
+      {
+        "title": "Assobio App",
+        "description": "Aplicativo mobile para monitoramento ambiental usando Flutter e IA",
+        "tags": ["Flutter", "Python", "IA", "Quarkus"],
+        "link": "https://github.com/felipesergiob"
+      },
+      {
+        "title": "Dashboard Analytics",
+        "description": "Sistema web de análise de dados com visualizações interativas",
+        "tags": ["React", "Node.js", "D3.js", "MongoDB"],
+        "link": "https://github.com/felipesergiob"
+      },
+      {
+        "title": "E-commerce Platform",
+        "description": "Plataforma completa de e-commerce com gestão de produtos",
+        "tags": ["AngularJS", "Node.js", "PostgreSQL", "AWS"],
+        "link": "https://github.com/felipesergiob"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "description": "Tecnologias que uso no dia a dia",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "AngularJS", "Flutter", "HTML5", "CSS3", "JavaScript"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["Node.js", "Python", "Java", "Quarkus", "REST APIs"]
+      },
+      "database": {
+        "title": "Banco de Dados",
+        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
+      },
+      "tools": {
+        "title": "Ferramentas",
+        "items": ["Git", "Docker", "AWS", "CI/CD", "Figma"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos Conversar?",
+    "description": "Estou sempre aberto a novas oportunidades e parcerias",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem"
+    },
+    "info": {
+      "location": "Recife, PE",
+      "email": "felipessmbf@gmail.com",
+      "phone": "(81) 98202-2426"
+    }
+  }
+} 

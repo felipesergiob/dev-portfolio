@@ -1,0 +1,97 @@
+{
+  "header": {
+    "name": "Felipe Sérgio Barroso",
+    "title": "Web and Mobile Developer",
+    "contact": "(81) 98202-2426",
+    "email": "felipessmbf@gmail.com",
+    "location": "RECIFE - PE"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Felipe Sérgio Barroso",
+    "title": "Web & Mobile Developer",
+    "cta": "See my work"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Mobile and Web Developer passionate about creating innovative solutions. With fullstack development experience, I combine creativity and technique to deliver high-quality products. Specialized in React, Flutter, and agile development.",
+    "experience": {
+      "title": "Experience",
+      "years": "2+",
+      "description": "Years of experience"
+    },
+    "projects": {
+      "title": "Projects",
+      "count": "10+",
+      "description": "Completed projects"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "A selection of my best work",
+    "items": [
+      {
+        "title": "Assobio App",
+        "description": "Mobile app for environmental monitoring using Flutter and AI",
+        "tags": ["Flutter", "Python", "AI", "Quarkus"],
+        "link": "https://github.com/felipesergiob"
+      },
+      {
+        "title": "Dashboard Analytics",
+        "description": "Web analytics system with interactive visualizations",
+        "tags": ["React", "Node.js", "D3.js", "MongoDB"],
+        "link": "https://github.com/felipesergiob"
+      },
+      {
+        "title": "E-commerce Platform",
+        "description": "Complete e-commerce platform with product management",
+        "tags": ["AngularJS", "Node.js", "PostgreSQL", "AWS"],
+        "link": "https://github.com/felipesergiob"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Technologies I use daily",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "AngularJS", "Flutter", "HTML5", "CSS3", "JavaScript"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["Node.js", "Python", "Java", "Quarkus", "REST APIs"]
+      },
+      "database": {
+        "title": "Database",
+        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
+      },
+      "tools": {
+        "title": "Tools",
+        "items": ["Git", "Docker", "AWS", "CI/CD", "Figma"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Talk?",
+    "description": "I'm always open to new opportunities and partnerships",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "location": "Recife, PE",
+      "email": "felipessmbf@gmail.com",
+      "phone": "(81) 98202-2426"
+    }
+  }
+} 
