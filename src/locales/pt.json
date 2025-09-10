@@ -77,7 +77,7 @@
       },
       {
         "title": "Assobio App",
-        "description": "Aplicativo mobile cross-platform desenvolvido em Flutter com recursos de geolocalização e bem-estar de pets. Integra módulos baseados em IA para recomendações de usuários, previsão comportamental de pets e notificações automatizadas.",
+        "description": "Aplicativo mobile Flutter desenvolvido em equipe na Assobio App. Trabalhei com geolocalização, bem-estar de pets e integração de módulos de IA para recomendações e notificações automatizadas.",
         "tags": ["Flutter", "AI/ML", "Geolocation", "AWS", "RabbitMQ"],
         "appstore": "https://apps.apple.com/br/app/assobio-app/id6458534384",
         "playstore": "https://play.google.com/store/apps/details?id=br.com.assobio.dogapp",
