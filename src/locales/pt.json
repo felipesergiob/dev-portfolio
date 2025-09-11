@@ -4,7 +4,9 @@
     "title": "Desenvolvedor Web e Mobile",
     "contact": "(81) 98202-2426",
     "email": "felipessmbf@gmail.com",
-    "location": "RECIFE - PE"
+    "location": "RECIFE - PE",
+    "linkedin": "https://www.linkedin.com/in/felipesergiob",
+    "github": "https://github.com/felipesergiob"
   },
   "nav": {
     "home": "Início",
@@ -128,7 +130,9 @@
     "info": {
       "location": "Recife, PE",
       "email": "felipessmbf@gmail.com",
-      "phone": "(81) 98202-2426"
+      "phone": "(81) 98202-2426",
+      "linkedin": "https://www.linkedin.com/in/felipesergiob",
+      "github": "https://github.com/felipesergiob"
     }
   }
 } 

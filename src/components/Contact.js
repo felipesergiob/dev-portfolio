@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaSpinner, FaCheck, FaExclamationTriangle } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaSpinner, FaCheck, FaExclamationTriangle, FaLinkedin, FaGithub } from 'react-icons/fa';
 import emailService from '../services/emailService';
 
 function Contact() {
@@ -237,6 +237,38 @@ function Contact() {
                   Phone
                 </h3>
                 <p className="text-gray-600">{t('contact.info.phone')}</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0">
+                <FaLinkedin className="text-2xl text-blue-600" />
+              </div>
+              <div>
+                <a
+                  href={t('contact.info.linkedin')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition-colors text-lg font-medium"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0">
+                <FaGithub className="text-2xl text-blue-600" />
+              </div>
+              <div>
+                <a
+                  href={t('contact.info.github')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition-colors text-lg font-medium"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
           </motion.div>
